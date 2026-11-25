@@ -630,6 +630,50 @@
     .venue-sep { width: 46px; height: 1px; margin: 12px auto; background: #D4BE9A; }
     .hashtag { margin: 14px auto 2px; text-align: center; font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 600; font-size: 16px; letter-spacing: 0.04em; color: #A8853F; }
     .ff svg { filter: drop-shadow(0 0 1px rgba(85,107,31,0.35)); }
+
+    /* ===== Emerald green card ===== */
+    .card {
+      background: linear-gradient(180deg, #1F5C45 0%, #194F3B 55%, #123F2F 100%) !important;
+      --text-light: #FCF1E2; --text-light-soft: rgba(252,241,226,0.94); --text-light-muted: rgba(252,241,226,0.82); --border-light: rgba(252,241,226,0.45);
+      --text-dark: #FCF1E2; --text-mid: rgba(252,241,226,0.92); --text-soft: rgba(252,241,226,0.80); --text-muted: rgba(252,241,226,0.62);
+      --border: rgba(252,241,226,0.35); --border-mid: rgba(252,241,226,0.22); --border-soft: rgba(252,241,226,0.12);
+      --border-oncard: rgba(252,241,226,0.55); --border-oncard-mid: rgba(252,241,226,0.38); --army-soft: #E8D9B5;
+    }
+    .card::after { background: radial-gradient(ellipse 70% 40% at 30% 18%, rgba(255,255,255,0.10) 0%, transparent 60%) !important; }
+    .card-header { background: transparent !important; border-bottom-color: rgba(212,190,154,0.3) !important; }
+    .card-ib1 { border-color: rgba(212,190,154,0.5) !important; }
+    .card .names-line .couple-name { color: #FCF1E2 !important; }
+    .card .names-line .couple-amp { color: #D4B370 !important; }
+    .card .grace-caps, .card .card-header .grace-caps { color: #D4BE9A !important; }
+    .card .grace-we, .card .date-block, .card .db-side { color: #FCF1E2 !important; }
+    .card .db-day { color: #D4B370 !important; }
+    .card .db-bar { background: rgba(212,179,112,0.75) !important; }
+    .card .names-rule-flower, .card .names-rule-dot { color: #D4B370 !important; }
+    .card .names-rule-line-l, .card .names-rule-line-r { background: rgba(212,190,154,0.55) !important; }
+    .card .header-title { color: #FCF1E2 !important; }
+    .card .venue-label { color: #D4B370 !important; }
+    .card .venue-name { color: #FCF1E2 !important; }
+    .card .venue-sub { color: #DCE3D4 !important; }
+    .card .venue-sep { background: rgba(212,179,112,0.6) !important; }
+    .tagline-band, .deadline-band { background: linear-gradient(135deg, #DCE3D4 0%, #F7F0E3 50%, #D4BE9A 100%) !important; border-color: rgba(212,190,154,0.5) !important; }
+    .tagline-text, .tagline-text strong, .deadline-label, .deadline-date { color: #123F2F !important; }
+    .seat-panel { background: rgba(252,241,226,0.08) !important; border-color: rgba(212,190,154,0.3) !important; }
+    .card .seat-number, .card .seat-panel-label, .card .seat-sublabel { color: #FCF1E2 !important; }
+    .card .message-input { background: rgba(252,241,226,0.10) !important; color: #FCF1E2 !important; border-color: rgba(212,190,154,0.65) !important; }
+    .card .message-input::placeholder { color: rgba(252,241,226,0.7) !important; }
+    .card .message-input:focus { background: rgba(252,241,226,0.16) !important; border-color: #D4B370 !important; }
+    .card .toggle-track { background: rgba(252,241,226,0.25) !important; }
+    .card .attend-toggle input:checked + .toggle-track { background: #A8853F !important; border-color: #D4B370 !important; }
+    .card .status-bar .status-dot { background: #D4B370 !important; }
+    .card .status-bar.error { color: #FFE0E0 !important; }
+    .card .suggest-btn { background: rgba(252,241,226,0.10) !important; }
+    .card .suggest-go { color: #FCF1E2 !important; }
+    .card .btn-submit { background: #F3E7CF !important; border-color: #F3E7CF !important; color: #123F2F !important; }
+    .card .btn-submit:hover:not(:disabled) { background: #FCF1E2 !important; }
+    .card .note-section p strong { color: #D4B370 !important; }
+    .card .page-footer p { color: #E8D9B5 !important; font-family: 'Cormorant Garamond', serif !important; font-style: normal !important; font-weight: 500; font-size: 16px !important; letter-spacing: 0.06em; line-height: 1.6; }
+    .card .page-footer .footer-tag { display: inline-block; margin-top: 2px; color: #D4B370; font-weight: 600; letter-spacing: 0.08em; }
+    .ff svg { filter: drop-shadow(0 0 1px rgba(0,0,0,0.25)) !important; }
 </style>
 </head>
 <body>
@@ -669,7 +713,6 @@
             <span class="venue-sub">Brgy. Alas Asin, Mariveles, Bataan</span>
           </div>
         </div>
-        <div class="hashtag">#dreamKIMtruewithJE</div>
         <div class="names-rule">
           <div class="names-rule-line-l"></div>
           <div class="names-rule-dot"></div>
@@ -922,7 +965,7 @@
         <p><strong>STRICTLY NO PLUS ONE.</strong><br/>Thank you for your kind understanding.</p>
       </div>
       <div class="page-footer">
-        <p>Kim Aldrin &amp; Je-Anne &#8212; with love &middot; #dreamKIMtruewithJE</p>
+        <p>Kim Aldrin &amp; Je-Anne &#8212; with love<br/><span class="footer-tag">#dreamKIMtruewithJE</span></p>
       </div>
     </div></div></div>
   </div>
